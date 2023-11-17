@@ -1,4 +1,4 @@
-# Script Zeus pour DCS
+# Script Zeus pour DCS (WIP)
 
 
 Ce script permet de faire slot différents types d'unités, voir des bases entières afin de créer rapidement des missions d'entrainement. 

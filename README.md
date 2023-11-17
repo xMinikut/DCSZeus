@@ -3,7 +3,7 @@
 
 Ce script permet de faire slot différents types d'unités, voir des bases entières afin de créer rapidement des missions d'entrainement. 
 
-Pour cela, charger les scripts Mooose_Fix et ZeusClass dans un trigger en déclenchement unique sur un temps supérieur à 1s, puis sur un second déclencheur à 10s, chargé le fichier Zeus.lua
+Pour cela, charger les scripts Mooose_Fix, TemplateUnit et ZeusClass dans un trigger en déclenchement unique sur un temps supérieur à 1s, puis sur un second déclencheur à 10s, chargé le fichier Zeus.lua
 
 
 

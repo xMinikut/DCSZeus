@@ -40,7 +40,7 @@ Pour les unités, il est possible de choisir le camp et le nombre : #addZ_TypeUn
 
 #### Liste des unités diposnibles (code et description) : 
 
-Il est possible de faire slot des unités classique ou des sites SAM complets : 
+Il est possible de faire slot des unités classiques ou des sites SAM complets : 
 
 ##### SAM :
 
@@ -147,4 +147,4 @@ Si des zones ont été ajoutées dans l'éditeur et paramétrées dans le script
 
 Il est possible de générer une explosion de la puissance voulue : #explosion_Détonateur_Puissance avec :
  - Détonateur : le temps en seconde avant explosion
- - Puissance : la puissance de l'expplosion (entre 1 et l'infini)
+ - Puissance : la puissance de l'explosion (entre 1 et l'infini)

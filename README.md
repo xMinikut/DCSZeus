@@ -11,7 +11,7 @@ Pour cela, charger les scripts Mooose_Fix et ZeusClass dans un trigger en décle
 ![image](https://github.com/docbrownd/DCSZeus/assets/105074220/09bb18cb-f452-4a13-853b-1aee58b62080)
 
 
-Ce fichier peut être édité afin de coller au mieux à ce que souhaite le créateur de mission : 
+Le script Zeus peut être édité afin de coller au mieux à ce que souhaite le créateur de mission.
 
 ## Ajouter des zones pour faire slot des unités aléatoirement dedans
 

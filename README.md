@@ -34,6 +34,7 @@ Voici la liste des commandes disponibles :
 
  - #addZ_FOB1 : Permet de faire slot une petite base
  - #addZ_LARGEFOB : Permet de faire slot une importante base
+ - #addZ_MEDIUMFOB : Permet de faire slot une base moyenne
  
 ### Spawn d'unité
 

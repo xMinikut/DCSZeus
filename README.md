@@ -5,6 +5,12 @@ Ce script permet de faire slot différents types d'unités, voir des bases enti�
 
 Pour cela, charger les scripts Mooose_Fix et ZeusClass dans un trigger en déclenchement unique sur un temps supérieur à 1s, puis sur un second déclencheur à 10s, chargé le fichier Zeus.lua
 
+
+
+![image](https://github.com/docbrownd/DCSZeus/assets/105074220/1a61615a-ee0b-401e-b84d-6195ca3b210c)
+![image](https://github.com/docbrownd/DCSZeus/assets/105074220/09bb18cb-f452-4a13-853b-1aee58b62080)
+
+
 Ce fichier peut être édité afin de coller au mieux à ce que souhaite le créateur de mission : 
 
 ## Ajouter des zones pour faire slot des unités aléatoirement dedans

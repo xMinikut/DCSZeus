@@ -40,7 +40,7 @@ Pour les unités, il est possible de choisir le camp et le nombre : #addZ_TypeUn
 
 #### Liste des unités diposnibles (code et description) : 
 
-	Il est possible de faire slot des unités classique ou des sites SAM complets : 
+Il est possible de faire slot des unités classique ou des sites SAM complets : 
 
 ##### SAM :
 
@@ -94,7 +94,7 @@ Pour les unités, il est possible de choisir le camp et le nombre : #addZ_TypeUn
 
 ### Spawn d'unité venant de l'éditeur
 
-il est possible de faire spawn un groupe créé directement dans l'éditeur, en utilisant le même modèle mais avec la commande #add : #add_NomUnité_Coalition_Nombre
+Il est possible de faire spawn un groupe créé directement dans l'éditeur, en utilisant le même modèle mais avec la commande #add : #add_NomUnité_Coalition_Nombre
 
 
 

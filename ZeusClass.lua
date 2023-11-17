@@ -140,11 +140,15 @@ do
 		obj.markID = 10000
 		obj.turnOffReco = false
 		obj.zones = {}
+		obj.defineZone = ""
+		self.zonesMenu = {}
         return obj
     end
 
-	function ZeusMod:AddZone(zoneName, codeName)
+	function ZeusMod:AddZone(zoneName, codeName, Menu)
 		self.zones[codeName] = ZONE:FindByName(zoneName)
+		-- self.zonesMenu[Menu] = {zoneName = zoneName, menu = Menu, codeName = codeName}
+		self.zonesMenu[codeName] = zoneName
 	end
 
 	function ZeusMod:UsePassword(pwd)
@@ -186,12 +190,36 @@ do
 
 	function ZeusMod:Init()
 		self:CreateTemplate()
+		self:DefineMenu()
         world.addEventHandler(self)
 		env.info("Zeus Init", false)
 
 	end
 
+	function ZeusMod:defineZoneFromMenu(codename)
+		if (codename ~= nil) then 
+			env.info("define : " .. tostring(codename))
+			self.defineZone = codename
+			env.info("define 2 : " .. tostring(self.zonesMenu[codename]))
+			trigger.action.outText("Utilisez la command 'zone' pour déclancher le spawn dans la zone "..tostring(self.zonesMenu[codename]), 20)
+		end
+	end
 
+	function ZeusMod:DefineMenu()
+		if (self.zonesMenu ~= {}) then 
+			local menuSpawn = missionCommands.addSubMenu("Spawn in zone", nil)
+			for codeName, zoneName in pairs(self.zonesMenu) do
+				missionCommands.addCommand(  
+					"Zone "..zoneName,
+					menuSpawn,
+					self.defineZoneFromMenu,
+					self, codeName
+				)
+			end
+		end
+
+
+	end
 
 	
     function ZeusMod:SpawnEditorUnit(groupName, pos)
@@ -238,6 +266,8 @@ do
 			self:SpawnStaticUnit("FOB", pos)
 		elseif(groupName == "LARGEFOB") then 
 			self:SpawnStaticUnit("LARGEFOB", pos)
+		elseif(groupName == "MEDIUMFOB") then 
+			self:SpawnStaticUnit("MEDIUMFOB", pos)
 		else
 			local nbr = tonumber(cmds[4]) or 1
 			self.randomPos = nbr > 1
@@ -310,7 +340,7 @@ do
 
 
 		SPAWNSTATIC:InitType("Invisible FARP")
-		:InitNamePrefix("Tour1")
+		:InitNamePrefix("farpInv")
 		:InitShape("invisiblefarp")
 		:InitCountry(country.id.RUSSIA)
 		:SpawnFromPointVec2(POINT, 90)
@@ -719,8 +749,30 @@ do
 	function ZeusMod:SpawnStaticUnit(staticName, pos)
 		if (staticName == "FOB") then self:SpawnStaticFOB(pos) end
 		if (staticName == "LARGEFOB") then self:SpawnStaticLARGEFOB(pos) end
+		if (staticName == "MEDIUMFOB") then self:SpawnStaticMEDIUMFOB(pos) end
+
 	end
 
+	function ZeusMod:SpawnStaticMEDIUMFOB(pos)
+		local coord = COORDINATE:NewFromVec3(pos)
+		local POINT = POINT_VEC2:NewFromVec2(coord:GetVec2())
+
+
+		SPAWNSTATIC:InitType("Invisible FARP")
+		:InitNamePrefix("farpInv")
+		:InitShape("invisiblefarp")
+		:InitCountry(country.id.RUSSIA)
+		:SpawnFromPointVec2(POINT, 90)
+
+
+
+		SPAWNSTATIC:InitType("house2arm")
+		:InitNamePrefix("Tour1")
+		:InitCountry(country.id.RUSSIA)
+		:SpawnFromPointVec2(POINT_VEC2:NewFromVec2(coord:Translate(415, 218, false, true):GetVec2()), 0)
+
+
+	end
 
 	function ZeusMod:Remove(pos, cmds)
 		if (cmds[2] == "all") then 
@@ -847,7 +899,16 @@ do
 		if (self.zones[codeName] ~= nil) then 
 			return self.zones[codeName]:GetRandomPointVec3()
 		end
+		return nil
+	end
 
+	function ZeusMod:ConvertCmd(cmd)
+		local cmdN = {}
+		cmdN[1] = "addZ"
+		for i = 2, #cmd do 
+			cmdN[i] = cmd[i+1]
+		end
+		return cmdN
 	end
 
 	function ZeusMod:onEvent(event)
@@ -865,16 +926,21 @@ do
 					if (cmd[1] == "turnoffreco") then self.turnOffReco = true end
 					if (cmd[1] == "turnonreco") then self.turnOffReco = false end
 					if (cmd[1] == "zone") then 
-						local vec3 = self:RandomPosInZone(cmd[2])
-						if  vec3 ~= nil then 
-							local cmdN = {}
-							cmdN[1] = "addZ"
-							for i = 2, #cmd do 
-								cmdN[i] = cmd[i+1]
-							end
+						local vec3 = self:RandomPosInZone(cmd[2]) or self:RandomPosInZone(self.defineZone)
+						local cmdN = self:ConvertCmd(cmd)
+						if vec3 ~= nil and cmdN ~= nil then 
 							self:AddSpecificGroup(vec3, cmdN) 
 						end
 					end 
+
+					if (cmd[1] == "test") then 
+						local coord = COORDINATE:NewFromVec3(event.pos)
+						local POINT = POINT_VEC2:NewFromVec2(coord:GetVec2())
+				
+						SPAWNSTATIC:NewFromTemplate(TEMPLATE_TEST)
+						:InitCountry(country.id.RUSSIA)
+						:SpawnFromPointVec2(POINT, 90)
+					end
 
 				end
 			
@@ -1042,6 +1108,8 @@ do
 		:SpawnFromPointVec3(POINT_VEC3:NewFromVec3(obj.pos))
 		env.info("spawn name : " .. tostring(self.name), false)
 	end
+
+
 
 
 end

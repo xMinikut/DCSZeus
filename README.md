@@ -10,6 +10,7 @@ Pour cela, charger les scripts Mooose_Fix, TemplateUnit et ZeusClass dans un tri
 ![image](https://github.com/docbrownd/DCSZeus/assets/105074220/017cacca-e00b-467c-8af3-8be0b0a07c71)
 ![image](https://github.com/docbrownd/DCSZeus/assets/105074220/09bb18cb-f452-4a13-853b-1aee58b62080)
 
+Au niveau de l'éditeur, il faut absolument ajouter une unité appelée MOOSERED en activation retardé.
 
 Le script Zeus peut être édité afin de coller au mieux à ce que souhaite le créateur de mission.
 

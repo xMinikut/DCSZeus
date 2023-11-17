@@ -147,8 +147,9 @@ do
 
 	function ZeusMod:AddZone(zoneName, codeName, Menu)
 		self.zones[codeName] = ZONE:FindByName(zoneName)
-		-- self.zonesMenu[Menu] = {zoneName = zoneName, menu = Menu, codeName = codeName}
-		self.zonesMenu[codeName] = zoneName
+		if self.zonesMenu[Menu] == nil then self.zonesMenu[Menu] = {} end 
+		self.zonesMenu[Menu][#self.zonesMenu[Menu] + 1] = {zoneName = zoneName, menu = Menu, codeName = codeName}
+		--self.zonesMenu[codeName] = zoneName
 	end
 
 	function ZeusMod:UsePassword(pwd)
@@ -198,23 +199,26 @@ do
 
 	function ZeusMod:defineZoneFromMenu(codename)
 		if (codename ~= nil) then 
-			env.info("define : " .. tostring(codename))
 			self.defineZone = codename
-			env.info("define 2 : " .. tostring(self.zonesMenu[codename]))
-			trigger.action.outText("Utilisez la command 'zone' pour déclancher le spawn dans la zone "..tostring(self.zonesMenu[codename]), 20)
+			trigger.action.outText("Utilisez la commande '#zone' pour déclencher le spawn dans la zone "..self.zones[codename]:GetName(), 20)
 		end
 	end
 
 	function ZeusMod:DefineMenu()
 		if (self.zonesMenu ~= {}) then 
-			local menuSpawn = missionCommands.addSubMenu("Spawn in zone", nil)
-			for codeName, zoneName in pairs(self.zonesMenu) do
-				missionCommands.addCommand(  
-					"Zone "..zoneName,
-					menuSpawn,
-					self.defineZoneFromMenu,
-					self, codeName
-				)
+			local subMenus = {}
+			local menuSpawn = missionCommands.addSubMenu("Spawn in zones", nil)
+			for menuName, obj in pairs(self.zonesMenu) do 
+				subMenus[menuName] = missionCommands.addSubMenu(menuName.."...", menuSpawn)
+				for index, datas in ipairs(obj) do 
+					missionCommands.addCommand(  
+						"Zone "..datas.zoneName,
+						subMenus[menuName],
+						self.defineZoneFromMenu,
+						self, datas.codeName
+					)
+
+				end
 			end
 		end
 

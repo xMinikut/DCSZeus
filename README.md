@@ -16,7 +16,11 @@ Le script Zeus peut être édité afin de coller au mieux à ce que souhaite le 
 
 ## Ajouter des zones pour faire slot des unités aléatoirement dedans
 
-La fonction AddZone permet de renseigner au script l'existence de zones ajoutées dans l'éditeur. Le premier paramètre est le nom de la zone dans l'éditeur, le second est le nom qui sera utilisé pour faire slot dans cette zone spécifiquement.
+La fonction AddZone(zoneName, code, subMenu) permet de renseigner au script l'existence de zones ajoutées dans l'éditeur, elle prend trois paramètres : 
+ - zoneName : Le nom de la zone dans l'éditeur
+ - code : le code qui sera utilisé pour faire spawn une unité dans cette zone 
+ - subMenu : le nom du menu comm (il ne faut pas plus de 10 zones avec un même subMenu) 
+
 
 ## Utilisation
 
@@ -135,7 +139,9 @@ Si des zones ont été ajoutées dans l'éditeur et paramétrées dans le script
  - Coalition : 1 (Red) ou 2 (Bleu) (1 par défaut)
  - Nombre : le nombre d'unité (1 par défaut)
 
-
+Il est possible d'utiliser le menu comm pour faire spawn dans une zone sans avoir à retenir le code : 
+ - Dans le menu comm, choisir la zone
+ - Taper la commande sans zoneName : #zone__TypeUnité_Coalition_Nombre (il y a 2 fois le caractère _)
 
 
 ### Explosion

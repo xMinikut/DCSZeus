@@ -761,20 +761,93 @@ do
 		local coord = COORDINATE:NewFromVec3(pos)
 		local POINT = POINT_VEC2:NewFromVec2(coord:GetVec2())
 
-
 		SPAWNSTATIC:InitType("Invisible FARP")
 		:InitNamePrefix("farpInv")
 		:InitShape("invisiblefarp")
 		:InitCountry(country.id.RUSSIA)
 		:SpawnFromPointVec2(POINT, 90)
 
-
-
-		SPAWNSTATIC:InitType("house2arm")
-		:InitNamePrefix("Tour1")
+		SPAWNSTATIC:InitType("Container brown")
+		:InitNamePrefix("konteiner_brown")
+		:InitShape("konteiner_brown")
 		:InitCountry(country.id.RUSSIA)
-		:SpawnFromPointVec2(POINT_VEC2:NewFromVec2(coord:Translate(415, 218, false, true):GetVec2()), 0)
+		:SpawnFromPointVec2(POINT_VEC2:NewFromVec2(coord:Translate(22, 19, false, true):GetVec2()), 0)
 
+		SPAWNSTATIC:InitType("Container brown")
+		:InitNamePrefix("konteiner_brown")
+		:InitShape("konteiner_brown")
+		:InitCountry(country.id.RUSSIA)
+		:SpawnFromPointVec2(POINT_VEC2:NewFromVec2(coord:Translate(9, 270, false, true):GetVec2()), 0)
+
+		SPAWNSTATIC:InitType("Container brown")
+		:InitNamePrefix("konteiner_brown")
+		:InitShape("konteiner_brown")
+		:InitCountry(country.id.RUSSIA)
+		:SpawnFromPointVec2(POINT_VEC2:NewFromVec2(coord:Translate(9, 270, false, true):GetVec2()), 0)
+
+		SPAWNSTATIC:InitType("Container brown")
+		:InitNamePrefix("konteiner_brown")
+		:InitShape("konteiner_brown")
+		:InitCountry(country.id.RUSSIA)
+		:SpawnFromPointVec2(POINT_VEC2:NewFromVec2(coord:Translate(7, 237, false, true):GetVec2()), 90)		
+		
+		SPAWNSTATIC:InitType("Container brown")
+		:InitNamePrefix("konteiner_brown")
+		:InitShape("konteiner_brown")
+		:InitCountry(country.id.RUSSIA)
+		:SpawnFromPointVec2(POINT_VEC2:NewFromVec2(coord:Translate(9, 180, false, true):GetVec2()), 90)
+
+		SPAWNSTATIC:InitType("Container brown")
+		:InitNamePrefix("konteiner_brown")
+		:InitShape("konteiner_brown")
+		:InitCountry(country.id.RUSSIA)
+		:SpawnFromPointVec2(POINT_VEC2:NewFromVec2(coord:Translate(9, 180, false, true):GetVec2()), 90)
+
+		SPAWNSTATIC:InitType("Container brown")
+		:InitNamePrefix("konteiner_brown")
+		:InitShape("konteiner_brown")
+		:InitCountry(country.id.RUSSIA)
+		:SpawnFromPointVec2(POINT_VEC2:NewFromVec2(coord:Translate(9, 180, false, true):GetVec2()), 90)
+
+		SPAWNSTATIC:InitType("BTR-80")
+		:InitNamePrefix("BTR-80")
+		:InitCountry(country.id.RUSSIA)
+		:SpawnFromPointVec2(POINT_VEC2:NewFromVec2(coord:Translate(26, 12, false, false):GetVec2()), 120)
+
+		SPAWNSTATIC:InitType("BTR-80")
+		:InitNamePrefix("BTR-80")
+		:InitCountry(country.id.RUSSIA)
+		:SpawnFromPointVec2(POINT_VEC2:NewFromVec2(coord:Translate(22, 14, false, false):GetVec2()), 120)
+
+		SPAWNSTATIC:InitType("BTR-80")
+		:InitNamePrefix("BTR-80")
+		:InitCountry(country.id.RUSSIA)
+		:SpawnFromPointVec2(POINT_VEC2:NewFromVec2(coord:Translate(17, 18, false, false):GetVec2()), 120)
+
+		SPAWNSTATIC:InitType("BTR-80")
+		:InitNamePrefix("BTR-80")
+		:InitCountry(country.id.RUSSIA)
+		:SpawnFromPointVec2(POINT_VEC2:NewFromVec2(coord:Translate(13, 24, false, false):GetVec2()), 120)
+
+		SPAWNSTATIC:InitType("T-80UD")
+		:InitNamePrefix("T-80UD")
+		:InitCountry(country.id.RUSSIA)
+		:SpawnFromPointVec2(POINT_VEC2:NewFromVec2(coord:Translate(33, 33, false, false):GetVec2()), 90)
+
+		SPAWNSTATIC:InitType("T-80UD")
+		:InitNamePrefix("T-80UD")
+		:InitCountry(country.id.RUSSIA)
+		:SpawnFromPointVec2(POINT_VEC2:NewFromVec2(coord:Translate(5, 47, false, false):GetVec2()), 180)
+
+		SPAWNSTATIC:InitType("outpost")
+		:InitNamePrefix("outpost")
+		:InitCountry(country.id.RUSSIA)
+		:SpawnFromPointVec2(POINT_VEC2:NewFromVec2(coord:Translate(17, 86, false, true):GetVec2()), 90)
+
+		SPAWNSTATIC:InitType("outpost")
+		:InitNamePrefix("outpost")
+		:InitCountry(country.id.RUSSIA)
+		:SpawnFromPointVec2(POINT_VEC2:NewFromVec2(coord:Translate(9, 0, false, true):GetVec2()), 0)
 
 	end
 

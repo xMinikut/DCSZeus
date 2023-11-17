@@ -34,9 +34,9 @@ Voici la liste des commandes disponibles :
 
 Pour les unités, il est possible de choisir le camp et le nombre : #addZ_TypeUnité_Coalition_Nombre avec :
 
-	- TypeUnité : l'unité voulue (voir ci-après)
-	- Nombre : le nombre d'unité (1 par défaut)
-	- Coalition : 1 (Red) ou 2 (Bleu) (1 par défaut)
+ - TypeUnité : l'unité voulue (voir ci-après)
+ - Nombre : le nombre d'unité (1 par défaut)
+ - Coalition : 1 (Red) ou 2 (Bleu) (1 par défaut)
 
 #### Liste des unités diposnibles (code et description) : 
 
@@ -44,47 +44,47 @@ Pour les unités, il est possible de choisir le camp et le nombre : #addZ_TypeUn
 
 ##### SAM :
 
-	- SA2 : Site SA2 complet
-	- SA3 : Site SA3 complet
-	- SA6 : Site SA6 complet
-	- SA10 : Site SA10 complet
-	- SA11 : Site SA11 complet
-	- SA5 : Site SA5 complet
-	(à venir : site patriot, hawk, nasam)
+ - SA2 : Site SA2 complet
+ - SA3 : Site SA3 complet
+ - SA6 : Site SA6 complet
+ - SA10 : Site SA10 complet
+ - SA11 : Site SA11 complet
+ - SA5 : Site SA5 complet
+ (à venir : site patriot, hawk, nasam)
 
 
 ##### Unités :
 
-	- SA-15 : Unité AA SA-15
-	- SA-13 : Unité AA SA-13
-	- SA-9 : Unité AA SA-9
-	- SA-8 : Unité AA SA-8
+ - SA-15 : Unité AA SA-15
+ - SA-13 : Unité AA SA-13
+ - SA-9 : Unité AA SA-9
+ - SA-8 : Unité AA SA-8
 
-	- T-55 : Tank T-55
-	- T-90 : Tank T-90
-	- T-80 : Tank T-80D
-	- T-72 : Tank T-72B
-	- M-1 : Char M-1 Abrams
+ - T-55 : Tank T-55
+ - T-90 : Tank T-90
+ - T-80 : Tank T-80D
+ - T-72 : Tank T-72B
+ - M-1 : Char M-1 Abrams
 
-	- M-109 : Unité M-109
-	- BMP-3 : Unité BMP-3
-	- BTR-80 : Unité BTR-80
+ - M-109 : Unité M-109
+ - BMP-3 : Unité BMP-3
+ - BTR-80 : Unité BTR-80
 	
-	- Vulcan : Unité Vulcan
-	- ZU23 : Unité AA ZU23
-	- ZSU23 : Unité AA ZSU23
+ - Vulcan : Unité Vulcan
+ - ZU23 : Unité AA ZU23
+ - ZSU23 : Unité AA ZSU23
 
-	- Smerch : Unité Smerch
-	- HL_KORD : Unité HL_KORD
+ - Smerch : Unité Smerch
+ - HL_KORD : Unité HL_KORD
 
-	- RPG : Soldat avec RPG
-	- AK : Soldat 
-	- SA-18 : Unité AA SA-18 (ManPad) 
+ - RPG : Soldat avec RPG
+ - AK : Soldat 
+ - SA-18 : Unité AA SA-18 (ManPad) 
 
-	- Ural : Unité Ural-375
-	- Ural-4320T : Unité Ural-4320T
-	- Ural-4320-31 : Unité Ural-4320-31
-	- Tigr : Unité Tigr
+ - Ural : Unité Ural-375
+ - Ural-4320T : Unité Ural-4320T
+ - Ural-4320-31 : Unité Ural-4320-31
+ - Tigr : Unité Tigr
 
 #### Exemple d'utilisation : 
 
@@ -105,9 +105,9 @@ Il est possible de faire spawn un convoi parmis une liste prédéfinie et d'indi
 Au niveau de la destination, déposer un marqueur et entrer la commande #destination
 Au niveau du site de spawn, entrée un marqueur avec la commande suivante : #convoy_Type_Nom__Coalition 
 Avec : 
-- Type : le type de convoi (voir ci-après)
-- Nom : le nom de votre convoi, il doit ête unique si vous en faîtes slot plusieurs en même temps
-- Coalition : 1 (Red) ou 2 (Bleu), 1 par défaut
+ - Type : le type de convoi (voir ci-après)
+ - Nom : le nom de votre convoi, il doit ête unique si vous en faîtes slot plusieurs en même temps
+ - Coalition : 1 (Red) ou 2 (Bleu), 1 par défaut
 
 #### Type de convoi (code et description) : 
 

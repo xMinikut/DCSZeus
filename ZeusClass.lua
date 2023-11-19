@@ -754,18 +754,24 @@ do
 		if (staticName == "FOB") then self:SpawnStaticFOB(pos) end
 		if (staticName == "LARGEFOB") then self:SpawnStaticLARGEFOB(pos) end
 		if (staticName == "MEDIUMFOB") then self:SpawnStaticMEDIUMFOB(pos) end
+		if (staticName == "SMALLFOB") then self:SpawnStaticSMALLFOB(pos) end
 
 	end
 
-	function ZeusMod:SpawnStaticMEDIUMFOB(pos)
+	function ZeusMod:SpawnStaticSMALLFOB(pos)
 		local coord = COORDINATE:NewFromVec3(pos)
 		local POINT = POINT_VEC2:NewFromVec2(coord:GetVec2())
-
+		
 		SPAWNSTATIC:InitType("Invisible FARP")
 		:InitNamePrefix("farpInv")
 		:InitShape("invisiblefarp")
 		:InitCountry(country.id.RUSSIA)
 		:SpawnFromPointVec2(POINT, 90)
+
+		self:Spawn("Z_SA-18", POINT_VEC3:NewFromVec3(coord:Translate(26,36, false, false):GetVec3()), 45)
+		self:Spawn("Z_SA-18", POINT_VEC3:NewFromVec3(coord:Translate(22,123, false, false):GetVec3()), 0)	
+		self:Spawn("Z_SA-18", POINT_VEC3:NewFromVec3(coord:Translate(30,191, false, false):GetVec3()), 270)
+		self:Spawn("Z_ZSU23", POINT_VEC3:NewFromVec3(coord:Translate(14,138, false, false):GetVec3()), 0)
 
 		SPAWNSTATIC:InitType("Container brown")
 		:InitNamePrefix("konteiner_brown")
@@ -849,7 +855,56 @@ do
 		:InitCountry(country.id.RUSSIA)
 		:SpawnFromPointVec2(POINT_VEC2:NewFromVec2(coord:Translate(9, 0, false, true):GetVec2()), 0)
 
+		SPAWNSTATIC:InitType("Container brown")
+		:InitNamePrefix("konteiner_brown")
+		:InitShape("konteiner_brown")
+		:InitCountry(country.id.RUSSIA)
+		:SpawnFromPointVec2(POINT_VEC2:NewFromVec2(coord:Translate(34, 129, false, true):GetVec2()), 90)
+
+		SPAWNSTATIC:InitType("Container brown")
+		:InitNamePrefix("konteiner_brown")
+		:InitShape("konteiner_brown")
+		:InitCountry(country.id.RUSSIA)
+		:SpawnFromPointVec2(POINT_VEC2:NewFromVec2(coord:Translate(9, 180, false, true):GetVec2()), 90)
+
+		SPAWNSTATIC:InitType("Container brown")
+		:InitNamePrefix("konteiner_brown")
+		:InitShape("konteiner_brown")
+		:InitCountry(country.id.RUSSIA)
+		:SpawnFromPointVec2(POINT_VEC2:NewFromVec2(coord:Translate(7, 240, false, true):GetVec2()), 0)
+
+		SPAWNSTATIC:InitType("Container brown")
+		:InitNamePrefix("konteiner_brown")
+		:InitShape("konteiner_brown")
+		:InitCountry(country.id.RUSSIA)
+		:SpawnFromPointVec2(POINT_VEC2:NewFromVec2(coord:Translate(9, 270, false, true):GetVec2()), 0)
+
+		SPAWNSTATIC:InitType("FARP Fuel Depot")
+		:InitNamePrefix("FARP Fuel Depot")
+		:InitShape("GSM Rus")
+		:InitCountry(country.id.RUSSIA)
+		:SpawnFromPointVec2(POINT_VEC2:NewFromVec2(coord:Translate(10, 69, false, true):GetVec2()), 270)
+
+		SPAWNSTATIC:InitType("Ural-375")
+		:InitNamePrefix("Ural-375")
+		:InitCountry(country.id.RUSSIA)
+		:SpawnFromPointVec2(POINT_VEC2:NewFromVec2(coord:Translate(9, 275, false, true):GetVec2()), 0)
+
 	end
+
+	function ZeusMod:SpawnStaticMEDIUMFOB(pos)
+		local coord = COORDINATE:NewFromVec3(pos)
+		local POINT = POINT_VEC2:NewFromVec2(coord:GetVec2())
+
+
+		
+		SPAWNSTATIC:InitType("Invisible FARP")
+		:InitNamePrefix("farpInv")
+		:InitShape("invisiblefarp")
+		:InitCountry(country.id.RUSSIA)
+		:SpawnFromPointVec2(POINT, 90)
+
+	end	
 
 	function ZeusMod:Remove(pos, cmds)
 		if (cmds[2] == "all") then 

@@ -270,6 +270,8 @@ do
 			self:SpawnStaticUnit("FOB", pos)
 		elseif(groupName == "LARGEFOB") then 
 			self:SpawnStaticUnit("LARGEFOB", pos)
+		elseif(groupName == "SMALLFOB") then 
+			self:SpawnStaticUnit("SMALLFOB", pos)
 		elseif(groupName == "MEDIUMFOB") then 
 			self:SpawnStaticUnit("MEDIUMFOB", pos)
 		else

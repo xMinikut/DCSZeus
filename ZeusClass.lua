@@ -123,7 +123,7 @@ local TMP_TEMPLATES = {
 ZeusMod = {}
 
 do
-    function ZeusMod:New()
+    function ZeusMod:New(fobTemplates)
         local obj = {}  
         setmetatable(obj,  {__index = self})
 		obj.templates = templates or TMP_TEMPLATES
@@ -141,7 +141,8 @@ do
 		obj.turnOffReco = false
 		obj.zones = {}
 		obj.defineZone = ""
-		self.zonesMenu = {}
+		obj.zonesMenu = {}
+		obj.fobTemplates = fobTemplates or {}
         return obj
     end
 
@@ -273,7 +274,7 @@ do
 		elseif(groupName == "SMALLFOB") then 
 			self:SpawnStaticUnit("SMALLFOB", pos)
 		elseif(groupName == "MEDIUMFOB") then 
-			self:SpawnStaticUnit("MEDIUMFOB", pos)
+			self:SpawnByTemplateName("BIGFOB",pos) 
 		else
 			local nbr = tonumber(cmds[4]) or 1
 			self.randomPos = nbr > 1
@@ -755,7 +756,6 @@ do
 	function ZeusMod:SpawnStaticUnit(staticName, pos)
 		if (staticName == "FOB") then self:SpawnStaticFOB(pos) end
 		if (staticName == "LARGEFOB") then self:SpawnStaticLARGEFOB(pos) end
-		if (staticName == "MEDIUMFOB") then self:SpawnStaticMEDIUMFOB(pos) end
 		if (staticName == "SMALLFOB") then self:SpawnStaticSMALLFOB(pos) end
 
 	end
@@ -894,19 +894,58 @@ do
 
 	end
 
-	function ZeusMod:SpawnStaticMEDIUMFOB(pos)
-		local coord = COORDINATE:NewFromVec3(pos)
-		local POINT = POINT_VEC2:NewFromVec2(coord:GetVec2())
+
+	function ZeusMod:SpawnByTemplateName(template, pos) 
+		local distanceBetween = 0
+		local angleBetween = 0
+		local initCoord = nil
+		local coord = nil
+
+		for index, datas in ipairs(self.fobTemplates[template]["static"]["group"]) do
+
+			local shapeName = datas.units[1].shape_name 
+			local typeName = datas.units[1].type 
+			local nameStat = datas.units[1].name 
+			local heading = datas.units[1].heading or 0
+			local x = datas.units[1].x
+			local z = datas.units[1].y 
+			local y = pos.y 
+			local initialPos = {x = 0, y = 0 , z = 0 }
+			local delta = {x = 0, y = 0 , z = 0 }
 
 
-		
-		SPAWNSTATIC:InitType("Invisible FARP")
-		:InitNamePrefix("farpInv")
-		:InitShape("invisiblefarp")
-		:InitCountry(country.id.RUSSIA)
-		:SpawnFromPointVec2(POINT, 90)
+			local spawnDtat = SPAWNSTATIC:InitType(typeName)
+			spawnDtat = spawnDtat:InitNamePrefix(nameStat)
 
-	end	
+			if (shapeName ~= nil ) then 
+				spawnDtat = spawnDtat:InitShape(shapeName)
+			end
+
+
+			if (index == 1) then 
+				initialPos = {
+					x = x, y = y, z = z
+				}
+
+				initCoord = COORDINATE:New(initialPos.x, pos.y, initialPos.z) 
+				
+				coord = COORDINATE:New(pos.x, pos.y, pos.z)
+				distanceBetween = initCoord:Get2DDistance(coord)
+
+				angleBetween = initCoord:GetAngleDegrees(initCoord:GetDirectionVec3(coord))
+				
+			else 
+				coord = COORDINATE:New(x, y,z):Translate(distanceBetween,angleBetween )
+
+			end
+
+			spawnDtat = spawnDtat:InitCountry(country.id.RUSSIA)
+			spawnDtat:SpawnFromCoordinate(coord, math.deg(heading))
+
+		end
+
+	end
+
 
 	function ZeusMod:Remove(pos, cmds)
 		if (cmds[2] == "all") then 
@@ -1052,6 +1091,7 @@ do
 				if (self.needPassword and self.passwordDone) or (not self.needPassword) then 
 					if (cmd[1] == "add") then self:AddGroup(event.pos, cmd) end -- for dev spawn 
 					if (cmd[1] == "addZ") then self:AddSpecificGroup(event.pos, cmd) end -- for tempalte spawn 
+					if (cmd[1] == 'addF') then self:SpawnByTemplateName(cmd[2],event.pos) end
 					if (cmd[1] == "explosion") then self:Explode(event.pos, cmd) end -- boom 
 					if (cmd[1] == "remove") then self:Remove(event.pos, cmd) end -- remove all 
 					if (cmd[1] == "convoy") then self:AddConvoy(event.pos, cmd) end -- spawn convoy

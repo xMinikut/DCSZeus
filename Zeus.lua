@@ -1,4 +1,4 @@
-local Zeus = ZeusMod:New()
+local Zeus = ZeusMod:New(FOBTemplates)
 Zeus:AddZone("71", "71", "Number")
 Zeus:AddZone("61", "61", "Number")
 Zeus:AddZone("74", "74", "Number")

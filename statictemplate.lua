@@ -12813,6 +12813,1360 @@ FOBTemplates = {
             }, -- end of [289]
         }, -- end of ["group"]
     }, -- end of ["static"] 
+    ["vehicle"] = 
+    {
+        ["group"] = 
+        {
+            [1] = 
+            {
+                ["visible"] = false,
+                ["tasks"] = 
+                {
+                }, -- end of ["tasks"]
+                ["uncontrollable"] = false,
+                ["task"] = "Pas de sol",
+                ["taskSelected"] = true,
+                ["route"] = 
+                {
+                    ["spans"] = 
+                    {
+                        [1] = 
+                        {
+                            [1] = 
+                            {
+                                ["y"] = -87417.8419869,
+                                ["x"] = -284128.4582237,
+                            }, -- end of [1]
+                            [2] = 
+                            {
+                                ["y"] = -87417.8419869,
+                                ["x"] = -284128.4582237,
+                            }, -- end of [2]
+                        }, -- end of [1]
+                    }, -- end of ["spans"]
+                    ["points"] = 
+                    {
+                        [1] = 
+                        {
+                            ["alt"] = 1348,
+                            ["type"] = "Turning Point",
+                            ["ETA"] = 0,
+                            ["alt_type"] = "BARO",
+                            ["formation_template"] = "",
+                            ["y"] = -87415.43384955,
+                            ["x"] = -284224.95397122,
+                            ["ETA_locked"] = true,
+                            ["speed"] = 0,
+                            ["action"] = "Off Road",
+                            ["task"] = 
+                            {
+                                ["id"] = "ComboTask",
+                                ["params"] = 
+                                {
+                                    ["tasks"] = 
+                                    {
+                                    }, -- end of ["tasks"]
+                                }, -- end of ["params"]
+                            }, -- end of ["task"]
+                            ["speed_locked"] = true,
+                        }, -- end of [1]
+                    }, -- end of ["points"]
+                }, -- end of ["route"]
+                ["groupId"] = 340,
+                ["hidden"] = false,
+                ["units"] = 
+                {
+                    [1] = 
+                    {
+                        ["skill"] = "High",
+                        ["coldAtStart"] = false,
+                        ["type"] = "Tor 9A331",
+                        ["unitId"] = 465,
+                        ["y"] = -87415.43384955,
+                        ["x"] = -284224.95397122,
+                        ["name"] = "Ground-2-1",
+                        ["heading"] = 2.1991148575129,
+                        ["playerCanDrive"] = true,
+                    }, -- end of [1]
+                }, -- end of ["units"]
+                ["y"] = -87415.43384955,
+                ["x"] = -284224.95397122,
+                ["name"] = "Ground-2",
+                ["start_time"] = 0,
+            }, -- end of [1]
+            [2] = 
+            {
+                ["visible"] = false,
+                ["tasks"] = 
+                {
+                }, -- end of ["tasks"]
+                ["uncontrollable"] = false,
+                ["task"] = "Pas de sol",
+                ["taskSelected"] = true,
+                ["route"] = 
+                {
+                    ["spans"] = 
+                    {
+                        [1] = 
+                        {
+                            [1] = 
+                            {
+                                ["y"] = -87417.8419869,
+                                ["x"] = -284128.4582237,
+                            }, -- end of [1]
+                            [2] = 
+                            {
+                                ["y"] = -87417.8419869,
+                                ["x"] = -284128.4582237,
+                            }, -- end of [2]
+                        }, -- end of [1]
+                    }, -- end of ["spans"]
+                    ["points"] = 
+                    {
+                        [1] = 
+                        {
+                            ["alt"] = 1348,
+                            ["type"] = "Turning Point",
+                            ["ETA"] = 0,
+                            ["alt_type"] = "BARO",
+                            ["formation_template"] = "",
+                            ["y"] = -87463.501191345,
+                            ["x"] = -284362.20382488,
+                            ["ETA_locked"] = true,
+                            ["speed"] = 0,
+                            ["action"] = "Off Road",
+                            ["task"] = 
+                            {
+                                ["id"] = "ComboTask",
+                                ["params"] = 
+                                {
+                                    ["tasks"] = 
+                                    {
+                                    }, -- end of ["tasks"]
+                                }, -- end of ["params"]
+                            }, -- end of ["task"]
+                            ["speed_locked"] = true,
+                        }, -- end of [1]
+                    }, -- end of ["points"]
+                }, -- end of ["route"]
+                ["groupId"] = 341,
+                ["hidden"] = false,
+                ["units"] = 
+                {
+                    [1] = 
+                    {
+                        ["skill"] = "High",
+                        ["coldAtStart"] = false,
+                        ["type"] = "Tor 9A331",
+                        ["unitId"] = 466,
+                        ["y"] = -87463.501191345,
+                        ["x"] = -284362.20382488,
+                        ["name"] = "Ground-1-1",
+                        ["heading"] = 6.0562925044203,
+                        ["playerCanDrive"] = true,
+                    }, -- end of [1]
+                }, -- end of ["units"]
+                ["y"] = -87463.501191345,
+                ["x"] = -284362.20382488,
+                ["name"] = "Ground-1",
+                ["start_time"] = 0,
+            }, -- end of [2]
+            [3] = 
+            {
+                ["visible"] = false,
+                ["tasks"] = 
+                {
+                }, -- end of ["tasks"]
+                ["uncontrollable"] = false,
+                ["task"] = "Pas de sol",
+                ["taskSelected"] = true,
+                ["route"] = 
+                {
+                    ["spans"] = 
+                    {
+                        [1] = 
+                        {
+                            [1] = 
+                            {
+                                ["y"] = -87417.8419869,
+                                ["x"] = -284128.4582237,
+                            }, -- end of [1]
+                            [2] = 
+                            {
+                                ["y"] = -87417.8419869,
+                                ["x"] = -284128.4582237,
+                            }, -- end of [2]
+                        }, -- end of [1]
+                    }, -- end of ["spans"]
+                    ["points"] = 
+                    {
+                        [1] = 
+                        {
+                            ["alt"] = 1348,
+                            ["type"] = "Turning Point",
+                            ["ETA"] = 0,
+                            ["alt_type"] = "BARO",
+                            ["formation_template"] = "",
+                            ["y"] = -87304.205322379,
+                            ["x"] = -284281.3545048,
+                            ["ETA_locked"] = true,
+                            ["speed"] = 0,
+                            ["action"] = "Off Road",
+                            ["task"] = 
+                            {
+                                ["id"] = "ComboTask",
+                                ["params"] = 
+                                {
+                                    ["tasks"] = 
+                                    {
+                                    }, -- end of ["tasks"]
+                                }, -- end of ["params"]
+                            }, -- end of ["task"]
+                            ["speed_locked"] = true,
+                        }, -- end of [1]
+                    }, -- end of ["points"]
+                }, -- end of ["route"]
+                ["groupId"] = 342,
+                ["hidden"] = false,
+                ["units"] = 
+                {
+                    [1] = 
+                    {
+                        ["skill"] = "High",
+                        ["coldAtStart"] = false,
+                        ["type"] = "Ural-375",
+                        ["unitId"] = 467,
+                        ["y"] = -87304.205322379,
+                        ["x"] = -284281.3545048,
+                        ["name"] = "Ground-3-1",
+                        ["heading"] = 0,
+                        ["playerCanDrive"] = true,
+                    }, -- end of [1]
+                }, -- end of ["units"]
+                ["y"] = -87304.205322379,
+                ["x"] = -284281.3545048,
+                ["name"] = "Ground-3",
+                ["start_time"] = 0,
+            }, -- end of [3]
+            [4] = 
+            {
+                ["visible"] = false,
+                ["tasks"] = 
+                {
+                }, -- end of ["tasks"]
+                ["uncontrollable"] = false,
+                ["task"] = "Pas de sol",
+                ["taskSelected"] = true,
+                ["route"] = 
+                {
+                    ["spans"] = 
+                    {
+                        [1] = 
+                        {
+                            [1] = 
+                            {
+                                ["y"] = -87417.8419869,
+                                ["x"] = -284128.4582237,
+                            }, -- end of [1]
+                            [2] = 
+                            {
+                                ["y"] = -87417.8419869,
+                                ["x"] = -284128.4582237,
+                            }, -- end of [2]
+                        }, -- end of [1]
+                    }, -- end of ["spans"]
+                    ["points"] = 
+                    {
+                        [1] = 
+                        {
+                            ["alt"] = 1348,
+                            ["type"] = "Turning Point",
+                            ["ETA"] = 0,
+                            ["alt_type"] = "BARO",
+                            ["formation_template"] = "",
+                            ["y"] = -87064.835723273,
+                            ["x"] = -284053.79631738,
+                            ["ETA_locked"] = true,
+                            ["speed"] = 0,
+                            ["action"] = "Off Road",
+                            ["task"] = 
+                            {
+                                ["id"] = "ComboTask",
+                                ["params"] = 
+                                {
+                                    ["tasks"] = 
+                                    {
+                                    }, -- end of ["tasks"]
+                                }, -- end of ["params"]
+                            }, -- end of ["task"]
+                            ["speed_locked"] = true,
+                        }, -- end of [1]
+                    }, -- end of ["points"]
+                }, -- end of ["route"]
+                ["groupId"] = 343,
+                ["hidden"] = false,
+                ["units"] = 
+                {
+                    [1] = 
+                    {
+                        ["skill"] = "High",
+                        ["coldAtStart"] = false,
+                        ["type"] = "Tor 9A331",
+                        ["unitId"] = 468,
+                        ["y"] = -87064.835723273,
+                        ["x"] = -284053.79631738,
+                        ["name"] = "Ground-4-1",
+                        ["heading"] = 1.5009831567151,
+                        ["playerCanDrive"] = true,
+                    }, -- end of [1]
+                }, -- end of ["units"]
+                ["y"] = -87064.835723273,
+                ["x"] = -284053.79631738,
+                ["name"] = "Ground-4",
+                ["start_time"] = 0,
+            }, -- end of [4]
+            [5] = 
+            {
+                ["visible"] = false,
+                ["tasks"] = 
+                {
+                }, -- end of ["tasks"]
+                ["uncontrollable"] = false,
+                ["route"] = 
+                {
+                    ["spans"] = 
+                    {
+                    }, -- end of ["spans"]
+                    ["points"] = 
+                    {
+                        [1] = 
+                        {
+                            ["alt"] = 1348,
+                            ["type"] = "Turning Point",
+                            ["ETA"] = 0,
+                            ["alt_type"] = "BARO",
+                            ["formation_template"] = "",
+                            ["y"] = -87170.258064146,
+                            ["x"] = -283968.94418936,
+                            ["ETA_locked"] = true,
+                            ["speed"] = 0,
+                            ["action"] = "Off Road",
+                            ["task"] = 
+                            {
+                                ["id"] = "ComboTask",
+                                ["params"] = 
+                                {
+                                    ["tasks"] = 
+                                    {
+                                    }, -- end of ["tasks"]
+                                }, -- end of ["params"]
+                            }, -- end of ["task"]
+                            ["speed_locked"] = true,
+                        }, -- end of [1]
+                    }, -- end of ["points"]
+                }, -- end of ["route"]
+                ["groupId"] = 375,
+                ["hidden"] = false,
+                ["units"] = 
+                {
+                    [1] = 
+                    {
+                        ["skill"] = "High",
+                        ["coldAtStart"] = false,
+                        ["type"] = "SNR_75V",
+                        ["unitId"] = 500,
+                        ["y"] = -87170.258064146,
+                        ["x"] = -283968.94418936,
+                        ["name"] = "Ground-5-1",
+                        ["heading"] = 4.6774823953448,
+                        ["playerCanDrive"] = false,
+                    }, -- end of [1]
+                    [2] = 
+                    {
+                        ["skill"] = "High",
+                        ["coldAtStart"] = false,
+                        ["type"] = "S_75M_Volhov",
+                        ["unitId"] = 501,
+                        ["y"] = -87247.470946716,
+                        ["x"] = -284019.07333501,
+                        ["name"] = "Ground-5-2",
+                        ["heading"] = 3.8707424352756,
+                        ["playerCanDrive"] = false,
+                    }, -- end of [2]
+                    [3] = 
+                    {
+                        ["skill"] = "High",
+                        ["coldAtStart"] = false,
+                        ["type"] = "S_75M_Volhov",
+                        ["unitId"] = 502,
+                        ["y"] = -87174.618403764,
+                        ["x"] = -283862.23248057,
+                        ["name"] = "Ground-5-3",
+                        ["heading"] = -0.073701674231585,
+                        ["playerCanDrive"] = false,
+                    }, -- end of [3]
+                    [4] = 
+                    {
+                        ["skill"] = "High",
+                        ["coldAtStart"] = false,
+                        ["type"] = "S_75M_Volhov",
+                        ["unitId"] = 503,
+                        ["y"] = -87164.621307585,
+                        ["x"] = -284067.04360497,
+                        ["name"] = "Ground-5-4",
+                        ["heading"] = 3.0678909793582,
+                        ["playerCanDrive"] = false,
+                    }, -- end of [4]
+                    [5] = 
+                    {
+                        ["skill"] = "High",
+                        ["coldAtStart"] = false,
+                        ["type"] = "S_75M_Volhov",
+                        ["unitId"] = 504,
+                        ["y"] = -87083.249371346,
+                        ["x"] = -284012.47165266,
+                        ["name"] = "Ground-5-5",
+                        ["heading"] = 2.195226353361,
+                        ["playerCanDrive"] = false,
+                    }, -- end of [5]
+                    [6] = 
+                    {
+                        ["skill"] = "High",
+                        ["coldAtStart"] = false,
+                        ["type"] = "S_75M_Volhov",
+                        ["unitId"] = 505,
+                        ["y"] = -87084.815242025,
+                        ["x"] = -283907.65791736,
+                        ["name"] = "Ground-5-6",
+                        ["heading"] = 0.74660307420571,
+                        ["playerCanDrive"] = false,
+                    }, -- end of [6]
+                    [7] = 
+                    {
+                        ["skill"] = "High",
+                        ["coldAtStart"] = false,
+                        ["type"] = "S_75M_Volhov",
+                        ["unitId"] = 506,
+                        ["y"] = -87252.993289169,
+                        ["x"] = -283917.82557128,
+                        ["name"] = "Ground-5-7",
+                        ["heading"] = 5.59861839475,
+                        ["playerCanDrive"] = false,
+                    }, -- end of [7]
+                    [8] = 
+                    {
+                        ["skill"] = "High",
+                        ["coldAtStart"] = false,
+                        ["type"] = "ZIL-131 KUNG",
+                        ["unitId"] = 507,
+                        ["y"] = -87201.923425458,
+                        ["x"] = -283925.50349034,
+                        ["name"] = "Ground-5-8",
+                        ["heading"] = 2.5617454962798,
+                        ["playerCanDrive"] = false,
+                    }, -- end of [8]
+                    [9] = 
+                    {
+                        ["skill"] = "High",
+                        ["coldAtStart"] = false,
+                        ["type"] = "ZIL-131 KUNG",
+                        ["unitId"] = 508,
+                        ["y"] = -87197.22350515,
+                        ["x"] = -283922.06563847,
+                        ["name"] = "Ground-5-9",
+                        ["heading"] = 2.5617454962798,
+                        ["playerCanDrive"] = false,
+                    }, -- end of [9]
+                    [10] = 
+                    {
+                        ["skill"] = "High",
+                        ["coldAtStart"] = false,
+                        ["type"] = "p-19 s-125 sr",
+                        ["unitId"] = 509,
+                        ["y"] = -87115.586593196,
+                        ["x"] = -283801.04155099,
+                        ["name"] = "Ground-5-10",
+                        ["heading"] = 0.60697673404622,
+                        ["playerCanDrive"] = false,
+                    }, -- end of [10]
+                    [11] = 
+                    {
+                        ["skill"] = "High",
+                        ["coldAtStart"] = false,
+                        ["type"] = "Ural-4320 APA-5D",
+                        ["unitId"] = 510,
+                        ["y"] = -87126.730317664,
+                        ["x"] = -283802.74613614,
+                        ["name"] = "Ground-5-11",
+                        ["heading"] = 5.3542722994708,
+                        ["playerCanDrive"] = false,
+                    }, -- end of [11]
+                    [12] = 
+                    {
+                        ["skill"] = "High",
+                        ["coldAtStart"] = false,
+                        ["type"] = "ATMZ-5",
+                        ["unitId"] = 511,
+                        ["y"] = -87045.422848612,
+                        ["x"] = -284135.3897824,
+                        ["name"] = "Ground-5-12",
+                        ["heading"] = 5.5462585171902,
+                        ["playerCanDrive"] = false,
+                    }, -- end of [12]
+                    [13] = 
+                    {
+                        ["skill"] = "High",
+                        ["coldAtStart"] = false,
+                        ["type"] = "ATMZ-5",
+                        ["unitId"] = 512,
+                        ["y"] = -87027.135352387,
+                        ["x"] = -284114.76188206,
+                        ["name"] = "Ground-5-13",
+                        ["heading"] = 5.7033381498697,
+                        ["playerCanDrive"] = false,
+                    }, -- end of [13]
+                    [14] = 
+                    {
+                        ["skill"] = "High",
+                        ["coldAtStart"] = false,
+                        ["type"] = "Ural-4320T",
+                        ["unitId"] = 513,
+                        ["y"] = -86999.047668303,
+                        ["x"] = -284047.27807371,
+                        ["name"] = "Ground-5-14",
+                        ["heading"] = 3.8183825577158,
+                        ["playerCanDrive"] = false,
+                    }, -- end of [14]
+                    [15] = 
+                    {
+                        ["skill"] = "High",
+                        ["coldAtStart"] = false,
+                        ["type"] = "Ural-4320T",
+                        ["unitId"] = 514,
+                        ["y"] = -87016.167895439,
+                        ["x"] = -284033.83394847,
+                        ["name"] = "Ground-5-15",
+                        ["heading"] = 3.731116095116,
+                        ["playerCanDrive"] = false,
+                    }, -- end of [15]
+                }, -- end of ["units"]
+                ["y"] = -87170.258064146,
+                ["x"] = -283968.94418936,
+                ["name"] = "Ground-5",
+                ["start_time"] = 0,
+            }, -- end of [5]
+            [6] = 
+            {
+                ["visible"] = false,
+                ["tasks"] = 
+                {
+                }, -- end of ["tasks"]
+                ["uncontrollable"] = false,
+                ["task"] = "Pas de sol",
+                ["taskSelected"] = true,
+                ["route"] = 
+                {
+                    ["spans"] = 
+                    {
+                        [1] = 
+                        {
+                            [1] = 
+                            {
+                                ["y"] = -87430.439975123,
+                                ["x"] = -284273.50353486,
+                            }, -- end of [1]
+                            [2] = 
+                            {
+                                ["y"] = -87430.439975123,
+                                ["x"] = -284273.50353486,
+                            }, -- end of [2]
+                        }, -- end of [1]
+                    }, -- end of ["spans"]
+                    ["points"] = 
+                    {
+                        [1] = 
+                        {
+                            ["alt"] = 1348,
+                            ["type"] = "Turning Point",
+                            ["ETA"] = 0,
+                            ["alt_type"] = "BARO",
+                            ["formation_template"] = "",
+                            ["y"] = -87430.439975123,
+                            ["x"] = -284273.50353486,
+                            ["ETA_locked"] = true,
+                            ["speed"] = 0,
+                            ["action"] = "Off Road",
+                            ["task"] = 
+                            {
+                                ["id"] = "ComboTask",
+                                ["params"] = 
+                                {
+                                    ["tasks"] = 
+                                    {
+                                    }, -- end of ["tasks"]
+                                }, -- end of ["params"]
+                            }, -- end of ["task"]
+                            ["speed_locked"] = true,
+                        }, -- end of [1]
+                    }, -- end of ["points"]
+                }, -- end of ["route"]
+                ["groupId"] = 468,
+                ["hidden"] = false,
+                ["units"] = 
+                {
+                    [1] = 
+                    {
+                        ["skill"] = "High",
+                        ["coldAtStart"] = false,
+                        ["type"] = "SA-18 Igla-S manpad",
+                        ["unitId"] = 627,
+                        ["y"] = -87430.439975123,
+                        ["x"] = -284273.50353486,
+                        ["name"] = "Ground-6-1",
+                        ["heading"] = 0.020117899731011,
+                        ["playerCanDrive"] = true,
+                    }, -- end of [1]
+                }, -- end of ["units"]
+                ["y"] = -87430.439975123,
+                ["x"] = -284273.50353486,
+                ["name"] = "Ground-6",
+                ["start_time"] = 0,
+            }, -- end of [6]
+            [7] = 
+            {
+                ["visible"] = false,
+                ["tasks"] = 
+                {
+                }, -- end of ["tasks"]
+                ["uncontrollable"] = false,
+                ["task"] = "Pas de sol",
+                ["taskSelected"] = true,
+                ["route"] = 
+                {
+                    ["spans"] = 
+                    {
+                        [1] = 
+                        {
+                            [1] = 
+                            {
+                                ["y"] = -87430.439975123,
+                                ["x"] = -284273.50353486,
+                            }, -- end of [1]
+                            [2] = 
+                            {
+                                ["y"] = -87430.439975123,
+                                ["x"] = -284273.50353486,
+                            }, -- end of [2]
+                        }, -- end of [1]
+                    }, -- end of ["spans"]
+                    ["points"] = 
+                    {
+                        [1] = 
+                        {
+                            ["alt"] = 1348,
+                            ["type"] = "Turning Point",
+                            ["ETA"] = 0,
+                            ["alt_type"] = "BARO",
+                            ["formation_template"] = "",
+                            ["y"] = -87430.300885674,
+                            ["x"] = -284262.69187257,
+                            ["ETA_locked"] = true,
+                            ["speed"] = 0,
+                            ["action"] = "Off Road",
+                            ["task"] = 
+                            {
+                                ["id"] = "ComboTask",
+                                ["params"] = 
+                                {
+                                    ["tasks"] = 
+                                    {
+                                    }, -- end of ["tasks"]
+                                }, -- end of ["params"]
+                            }, -- end of ["task"]
+                            ["speed_locked"] = true,
+                        }, -- end of [1]
+                    }, -- end of ["points"]
+                }, -- end of ["route"]
+                ["groupId"] = 469,
+                ["hidden"] = false,
+                ["units"] = 
+                {
+                    [1] = 
+                    {
+                        ["skill"] = "High",
+                        ["coldAtStart"] = false,
+                        ["type"] = "SA-18 Igla-S manpad",
+                        ["unitId"] = 628,
+                        ["y"] = -87430.300885674,
+                        ["x"] = -284262.69187257,
+                        ["name"] = "Ground-7-1",
+                        ["heading"] = 0.020117899731011,
+                        ["playerCanDrive"] = true,
+                    }, -- end of [1]
+                }, -- end of ["units"]
+                ["y"] = -87430.300885674,
+                ["x"] = -284262.69187257,
+                ["name"] = "Ground-7",
+                ["start_time"] = 0,
+            }, -- end of [7]
+            [8] = 
+            {
+                ["visible"] = false,
+                ["tasks"] = 
+                {
+                }, -- end of ["tasks"]
+                ["uncontrollable"] = false,
+                ["task"] = "Pas de sol",
+                ["taskSelected"] = true,
+                ["route"] = 
+                {
+                    ["spans"] = 
+                    {
+                        [1] = 
+                        {
+                            [1] = 
+                            {
+                                ["y"] = -87430.439975123,
+                                ["x"] = -284273.50353486,
+                            }, -- end of [1]
+                            [2] = 
+                            {
+                                ["y"] = -87430.439975123,
+                                ["x"] = -284273.50353486,
+                            }, -- end of [2]
+                        }, -- end of [1]
+                    }, -- end of ["spans"]
+                    ["points"] = 
+                    {
+                        [1] = 
+                        {
+                            ["alt"] = 1348,
+                            ["type"] = "Turning Point",
+                            ["ETA"] = 0,
+                            ["alt_type"] = "BARO",
+                            ["formation_template"] = "",
+                            ["y"] = -87292.338806486,
+                            ["x"] = -284339.80420447,
+                            ["ETA_locked"] = true,
+                            ["speed"] = 0,
+                            ["action"] = "Off Road",
+                            ["task"] = 
+                            {
+                                ["id"] = "ComboTask",
+                                ["params"] = 
+                                {
+                                    ["tasks"] = 
+                                    {
+                                    }, -- end of ["tasks"]
+                                }, -- end of ["params"]
+                            }, -- end of ["task"]
+                            ["speed_locked"] = true,
+                        }, -- end of [1]
+                    }, -- end of ["points"]
+                }, -- end of ["route"]
+                ["groupId"] = 470,
+                ["hidden"] = false,
+                ["units"] = 
+                {
+                    [1] = 
+                    {
+                        ["skill"] = "High",
+                        ["coldAtStart"] = false,
+                        ["type"] = "SA-18 Igla-S manpad",
+                        ["unitId"] = 629,
+                        ["y"] = -87292.338806486,
+                        ["x"] = -284339.80420447,
+                        ["name"] = "Ground-8-1",
+                        ["heading"] = 4.7123889803847,
+                        ["playerCanDrive"] = true,
+                    }, -- end of [1]
+                }, -- end of ["units"]
+                ["y"] = -87292.338806486,
+                ["x"] = -284339.80420447,
+                ["name"] = "Ground-8",
+                ["start_time"] = 0,
+            }, -- end of [8]
+            [9] = 
+            {
+                ["visible"] = false,
+                ["tasks"] = 
+                {
+                }, -- end of ["tasks"]
+                ["uncontrollable"] = false,
+                ["task"] = "Pas de sol",
+                ["taskSelected"] = true,
+                ["route"] = 
+                {
+                    ["spans"] = 
+                    {
+                        [1] = 
+                        {
+                            [1] = 
+                            {
+                                ["y"] = -87430.439975123,
+                                ["x"] = -284273.50353486,
+                            }, -- end of [1]
+                            [2] = 
+                            {
+                                ["y"] = -87430.439975123,
+                                ["x"] = -284273.50353486,
+                            }, -- end of [2]
+                        }, -- end of [1]
+                    }, -- end of ["spans"]
+                    ["points"] = 
+                    {
+                        [1] = 
+                        {
+                            ["alt"] = 1348,
+                            ["type"] = "Turning Point",
+                            ["ETA"] = 0,
+                            ["alt_type"] = "BARO",
+                            ["formation_template"] = "",
+                            ["y"] = -87315.250357973,
+                            ["x"] = -284365.07964619,
+                            ["ETA_locked"] = true,
+                            ["speed"] = 0,
+                            ["action"] = "Off Road",
+                            ["task"] = 
+                            {
+                                ["id"] = "ComboTask",
+                                ["params"] = 
+                                {
+                                    ["tasks"] = 
+                                    {
+                                    }, -- end of ["tasks"]
+                                }, -- end of ["params"]
+                            }, -- end of ["task"]
+                            ["speed_locked"] = true,
+                        }, -- end of [1]
+                    }, -- end of ["points"]
+                }, -- end of ["route"]
+                ["groupId"] = 471,
+                ["hidden"] = false,
+                ["units"] = 
+                {
+                    [1] = 
+                    {
+                        ["skill"] = "High",
+                        ["coldAtStart"] = false,
+                        ["type"] = "SA-18 Igla-S manpad",
+                        ["unitId"] = 630,
+                        ["y"] = -87315.250357973,
+                        ["x"] = -284365.07964619,
+                        ["name"] = "Ground-9-1",
+                        ["heading"] = 0,
+                        ["playerCanDrive"] = true,
+                    }, -- end of [1]
+                }, -- end of ["units"]
+                ["y"] = -87315.250357973,
+                ["x"] = -284365.07964619,
+                ["name"] = "Ground-9",
+                ["start_time"] = 0,
+            }, -- end of [9]
+            [10] = 
+            {
+                ["visible"] = false,
+                ["tasks"] = 
+                {
+                }, -- end of ["tasks"]
+                ["uncontrollable"] = false,
+                ["task"] = "Pas de sol",
+                ["taskSelected"] = true,
+                ["route"] = 
+                {
+                    ["spans"] = 
+                    {
+                        [1] = 
+                        {
+                            [1] = 
+                            {
+                                ["y"] = -87430.439975123,
+                                ["x"] = -284273.50353486,
+                            }, -- end of [1]
+                            [2] = 
+                            {
+                                ["y"] = -87430.439975123,
+                                ["x"] = -284273.50353486,
+                            }, -- end of [2]
+                        }, -- end of [1]
+                    }, -- end of ["spans"]
+                    ["points"] = 
+                    {
+                        [1] = 
+                        {
+                            ["alt"] = 1348,
+                            ["type"] = "Turning Point",
+                            ["ETA"] = 0,
+                            ["alt_type"] = "BARO",
+                            ["formation_template"] = "",
+                            ["y"] = -87334.249308017,
+                            ["x"] = -284365.17262701,
+                            ["ETA_locked"] = true,
+                            ["speed"] = 0,
+                            ["action"] = "Off Road",
+                            ["task"] = 
+                            {
+                                ["id"] = "ComboTask",
+                                ["params"] = 
+                                {
+                                    ["tasks"] = 
+                                    {
+                                    }, -- end of ["tasks"]
+                                }, -- end of ["params"]
+                            }, -- end of ["task"]
+                            ["speed_locked"] = true,
+                        }, -- end of [1]
+                    }, -- end of ["points"]
+                }, -- end of ["route"]
+                ["groupId"] = 472,
+                ["hidden"] = false,
+                ["units"] = 
+                {
+                    [1] = 
+                    {
+                        ["skill"] = "High",
+                        ["coldAtStart"] = false,
+                        ["type"] = "SA-18 Igla-S manpad",
+                        ["unitId"] = 631,
+                        ["y"] = -87334.249308017,
+                        ["x"] = -284365.17262701,
+                        ["name"] = "Ground-10-1",
+                        ["heading"] = 0,
+                        ["playerCanDrive"] = true,
+                    }, -- end of [1]
+                }, -- end of ["units"]
+                ["y"] = -87334.249308017,
+                ["x"] = -284365.17262701,
+                ["name"] = "Ground-10",
+                ["start_time"] = 0,
+            }, -- end of [10]
+            [11] = 
+            {
+                ["visible"] = false,
+                ["tasks"] = 
+                {
+                }, -- end of ["tasks"]
+                ["uncontrollable"] = false,
+                ["task"] = "Pas de sol",
+                ["taskSelected"] = true,
+                ["route"] = 
+                {
+                    ["spans"] = 
+                    {
+                        [1] = 
+                        {
+                            [1] = 
+                            {
+                                ["y"] = -87430.439975123,
+                                ["x"] = -284273.50353486,
+                            }, -- end of [1]
+                            [2] = 
+                            {
+                                ["y"] = -87430.439975123,
+                                ["x"] = -284273.50353486,
+                            }, -- end of [2]
+                        }, -- end of [1]
+                    }, -- end of ["spans"]
+                    ["points"] = 
+                    {
+                        [1] = 
+                        {
+                            ["alt"] = 1348,
+                            ["type"] = "Turning Point",
+                            ["ETA"] = 0,
+                            ["alt_type"] = "BARO",
+                            ["formation_template"] = "",
+                            ["y"] = -87477.816761365,
+                            ["x"] = -284316.56157636,
+                            ["ETA_locked"] = true,
+                            ["speed"] = 0,
+                            ["action"] = "Off Road",
+                            ["task"] = 
+                            {
+                                ["id"] = "ComboTask",
+                                ["params"] = 
+                                {
+                                    ["tasks"] = 
+                                    {
+                                    }, -- end of ["tasks"]
+                                }, -- end of ["params"]
+                            }, -- end of ["task"]
+                            ["speed_locked"] = true,
+                        }, -- end of [1]
+                    }, -- end of ["points"]
+                }, -- end of ["route"]
+                ["groupId"] = 473,
+                ["hidden"] = false,
+                ["units"] = 
+                {
+                    [1] = 
+                    {
+                        ["skill"] = "High",
+                        ["coldAtStart"] = false,
+                        ["type"] = "SA-18 Igla-S manpad",
+                        ["unitId"] = 632,
+                        ["y"] = -87477.816761365,
+                        ["x"] = -284316.56157636,
+                        ["name"] = "Ground-11-1",
+                        ["heading"] = 3.1415926535898,
+                        ["playerCanDrive"] = true,
+                    }, -- end of [1]
+                }, -- end of ["units"]
+                ["y"] = -87477.816761365,
+                ["x"] = -284316.56157636,
+                ["name"] = "Ground-11",
+                ["start_time"] = 0,
+            }, -- end of [11]
+            [12] = 
+            {
+                ["visible"] = false,
+                ["tasks"] = 
+                {
+                }, -- end of ["tasks"]
+                ["uncontrollable"] = false,
+                ["route"] = 
+                {
+                    ["spans"] = 
+                    {
+                    }, -- end of ["spans"]
+                    ["points"] = 
+                    {
+                        [1] = 
+                        {
+                            ["alt"] = 1348,
+                            ["type"] = "Turning Point",
+                            ["ETA"] = 0,
+                            ["alt_type"] = "BARO",
+                            ["formation_template"] = "",
+                            ["y"] = -87123.975085226,
+                            ["x"] = -284487.0564256,
+                            ["ETA_locked"] = true,
+                            ["speed"] = 5.5555555555556,
+                            ["action"] = "Off Road",
+                            ["task"] = 
+                            {
+                                ["id"] = "ComboTask",
+                                ["params"] = 
+                                {
+                                    ["tasks"] = 
+                                    {
+                                    }, -- end of ["tasks"]
+                                }, -- end of ["params"]
+                            }, -- end of ["task"]
+                            ["speed_locked"] = true,
+                        }, -- end of [1]
+                    }, -- end of ["points"]
+                }, -- end of ["route"]
+                ["groupId"] = 503,
+                ["hidden"] = false,
+                ["units"] = 
+                {
+                    [1] = 
+                    {
+                        ["skill"] = "High",
+                        ["coldAtStart"] = false,
+                        ["type"] = "SA-11 Buk SR 9S18M1",
+                        ["unitId"] = 673,
+                        ["y"] = -87123.975085226,
+                        ["x"] = -284487.0564256,
+                        ["name"] = "Ground-12-1",
+                        ["heading"] = 4.7472955654246,
+                        ["playerCanDrive"] = false,
+                    }, -- end of [1]
+                    [2] = 
+                    {
+                        ["skill"] = "High",
+                        ["coldAtStart"] = false,
+                        ["type"] = "SA-11 Buk LN 9A310M1",
+                        ["unitId"] = 674,
+                        ["y"] = -87123.109246375,
+                        ["x"] = -284386.1476221,
+                        ["name"] = "Ground-12-2",
+                        ["heading"] = 3.1764992386297,
+                        ["playerCanDrive"] = false,
+                    }, -- end of [2]
+                    [3] = 
+                    {
+                        ["skill"] = "High",
+                        ["coldAtStart"] = false,
+                        ["type"] = "SA-11 Buk LN 9A310M1",
+                        ["unitId"] = 675,
+                        ["y"] = -87123.555506821,
+                        ["x"] = -284589.38614661,
+                        ["name"] = "Ground-12-3",
+                        ["heading"] = 0.01745329251999,
+                        ["playerCanDrive"] = false,
+                    }, -- end of [3]
+                    [4] = 
+                    {
+                        ["skill"] = "High",
+                        ["coldAtStart"] = false,
+                        ["type"] = "SA-11 Buk LN 9A310M1",
+                        ["unitId"] = 676,
+                        ["y"] = -87018.047085346,
+                        ["x"] = -284485.85670016,
+                        ["name"] = "Ground-12-4",
+                        ["heading"] = 4.7822021504645,
+                        ["playerCanDrive"] = false,
+                    }, -- end of [4]
+                    [5] = 
+                    {
+                        ["skill"] = "High",
+                        ["coldAtStart"] = false,
+                        ["type"] = "SA-11 Buk LN 9A310M1",
+                        ["unitId"] = 677,
+                        ["y"] = -87223.201291425,
+                        ["x"] = -284486.93977909,
+                        ["name"] = "Ground-12-5",
+                        ["heading"] = 1.6057029118348,
+                        ["playerCanDrive"] = false,
+                    }, -- end of [5]
+                    [6] = 
+                    {
+                        ["skill"] = "High",
+                        ["coldAtStart"] = false,
+                        ["type"] = "ATZ-10",
+                        ["unitId"] = 678,
+                        ["y"] = -87257.187817904,
+                        ["x"] = -284587.0373388,
+                        ["name"] = "Ground-12-6",
+                        ["heading"] = 0.78539816339749,
+                        ["playerCanDrive"] = false,
+                    }, -- end of [6]
+                    [7] = 
+                    {
+                        ["skill"] = "High",
+                        ["coldAtStart"] = false,
+                        ["type"] = "ATZ-10",
+                        ["unitId"] = 679,
+                        ["y"] = -87248.251828409,
+                        ["x"] = -284594.78545794,
+                        ["name"] = "Ground-12-7",
+                        ["heading"] = 0.95993108859689,
+                        ["playerCanDrive"] = false,
+                    }, -- end of [7]
+                    [8] = 
+                    {
+                        ["skill"] = "High",
+                        ["coldAtStart"] = false,
+                        ["type"] = "ZiL-131 APA-80",
+                        ["unitId"] = 680,
+                        ["y"] = -87150.847147093,
+                        ["x"] = -284464.67987519,
+                        ["name"] = "Ground-12-8",
+                        ["heading"] = 0.052359877559791,
+                        ["playerCanDrive"] = false,
+                    }, -- end of [8]
+                    [9] = 
+                    {
+                        ["skill"] = "High",
+                        ["coldAtStart"] = false,
+                        ["type"] = "Ural-4320-31",
+                        ["unitId"] = 681,
+                        ["y"] = -87166.820471986,
+                        ["x"] = -284505.58950228,
+                        ["name"] = "Ground-12-9",
+                        ["heading"] = 4.7996554429844,
+                        ["playerCanDrive"] = false,
+                    }, -- end of [9]
+                    [10] = 
+                    {
+                        ["skill"] = "High",
+                        ["coldAtStart"] = false,
+                        ["type"] = "Ural-4320-31",
+                        ["unitId"] = 682,
+                        ["y"] = -87167.127645759,
+                        ["x"] = -284514.38580825,
+                        ["name"] = "Ground-12-10",
+                        ["heading"] = 4.7822021504645,
+                        ["playerCanDrive"] = false,
+                    }, -- end of [10]
+                    [11] = 
+                    {
+                        ["skill"] = "High",
+                        ["coldAtStart"] = false,
+                        ["type"] = "Ural-375 PBU",
+                        ["unitId"] = 683,
+                        ["y"] = -87145.816810136,
+                        ["x"] = -284464.85553843,
+                        ["name"] = "Ground-12-11",
+                        ["heading"] = 0.052359877559791,
+                        ["playerCanDrive"] = false,
+                    }, -- end of [11]
+                    [12] = 
+                    {
+                        ["skill"] = "High",
+                        ["coldAtStart"] = false,
+                        ["type"] = "SA-11 Buk CC 9S470M1",
+                        ["unitId"] = 684,
+                        ["y"] = -87110.627346065,
+                        ["x"] = -284505.20097498,
+                        ["name"] = "Ground-12-12",
+                        ["heading"] = 0.01745329251999,
+                        ["playerCanDrive"] = false,
+                    }, -- end of [12]
+                }, -- end of ["units"]
+                ["y"] = -87123.975085226,
+                ["x"] = -284487.0564256,
+                ["name"] = "Ground-12",
+                ["start_time"] = 0,
+            }, -- end of [12]
+            [13] = 
+            {
+                ["visible"] = false,
+                ["tasks"] = 
+                {
+                }, -- end of ["tasks"]
+                ["uncontrollable"] = false,
+                ["task"] = "Pas de sol",
+                ["taskSelected"] = true,
+                ["route"] = 
+                {
+                    ["spans"] = 
+                    {
+                        [1] = 
+                        {
+                            [1] = 
+                            {
+                                ["y"] = -87417.8419869,
+                                ["x"] = -284128.4582237,
+                            }, -- end of [1]
+                            [2] = 
+                            {
+                                ["y"] = -87417.8419869,
+                                ["x"] = -284128.4582237,
+                            }, -- end of [2]
+                        }, -- end of [1]
+                    }, -- end of ["spans"]
+                    ["points"] = 
+                    {
+                        [1] = 
+                        {
+                            ["alt"] = 1348,
+                            ["type"] = "Turning Point",
+                            ["ETA"] = 0,
+                            ["alt_type"] = "BARO",
+                            ["formation_template"] = "",
+                            ["y"] = -87182.67718073,
+                            ["x"] = -284552.19187954,
+                            ["ETA_locked"] = true,
+                            ["speed"] = 0,
+                            ["action"] = "Off Road",
+                            ["task"] = 
+                            {
+                                ["id"] = "ComboTask",
+                                ["params"] = 
+                                {
+                                    ["tasks"] = 
+                                    {
+                                    }, -- end of ["tasks"]
+                                }, -- end of ["params"]
+                            }, -- end of ["task"]
+                            ["speed_locked"] = true,
+                        }, -- end of [1]
+                    }, -- end of ["points"]
+                }, -- end of ["route"]
+                ["groupId"] = 504,
+                ["hidden"] = false,
+                ["units"] = 
+                {
+                    [1] = 
+                    {
+                        ["skill"] = "High",
+                        ["coldAtStart"] = false,
+                        ["type"] = "2S6 Tunguska",
+                        ["unitId"] = 685,
+                        ["y"] = -87182.67718073,
+                        ["x"] = -284552.19187954,
+                        ["name"] = "Ground-13-1",
+                        ["heading"] = 1.5009831567151,
+                        ["playerCanDrive"] = true,
+                    }, -- end of [1]
+                }, -- end of ["units"]
+                ["y"] = -87182.67718073,
+                ["x"] = -284552.19187954,
+                ["name"] = "Ground-13",
+                ["start_time"] = 0,
+            }, -- end of [13]
+            [14] = 
+            {
+                ["visible"] = false,
+                ["tasks"] = 
+                {
+                }, -- end of ["tasks"]
+                ["uncontrollable"] = false,
+                ["task"] = "Pas de sol",
+                ["taskSelected"] = true,
+                ["route"] = 
+                {
+                    ["spans"] = 
+                    {
+                        [1] = 
+                        {
+                            [1] = 
+                            {
+                                ["y"] = -87417.8419869,
+                                ["x"] = -284128.4582237,
+                            }, -- end of [1]
+                            [2] = 
+                            {
+                                ["y"] = -87417.8419869,
+                                ["x"] = -284128.4582237,
+                            }, -- end of [2]
+                        }, -- end of [1]
+                    }, -- end of ["spans"]
+                    ["points"] = 
+                    {
+                        [1] = 
+                        {
+                            ["alt"] = 1377.8949025811,
+                            ["type"] = "Turning Point",
+                            ["ETA"] = 0,
+                            ["alt_type"] = "BARO",
+                            ["formation_template"] = "",
+                            ["y"] = -87114.422555331,
+                            ["x"] = -284456.08446979,
+                            ["ETA_locked"] = true,
+                            ["speed"] = 0,
+                            ["action"] = "Off Road",
+                            ["task"] = 
+                            {
+                                ["id"] = "ComboTask",
+                                ["params"] = 
+                                {
+                                    ["tasks"] = 
+                                    {
+                                    }, -- end of ["tasks"]
+                                }, -- end of ["params"]
+                            }, -- end of ["task"]
+                            ["speed_locked"] = true,
+                        }, -- end of [1]
+                    }, -- end of ["points"]
+                }, -- end of ["route"]
+                ["groupId"] = 505,
+                ["hidden"] = false,
+                ["units"] = 
+                {
+                    [1] = 
+                    {
+                        ["skill"] = "High",
+                        ["coldAtStart"] = false,
+                        ["type"] = "2S6 Tunguska",
+                        ["unitId"] = 686,
+                        ["y"] = -87114.422555331,
+                        ["x"] = -284456.08446979,
+                        ["name"] = "Ground-14-1",
+                        ["heading"] = 1.5009831567151,
+                        ["playerCanDrive"] = true,
+                    }, -- end of [1]
+                }, -- end of ["units"]
+                ["y"] = -87114.422555331,
+                ["x"] = -284456.08446979,
+                ["name"] = "Ground-14",
+                ["start_time"] = 0,
+            }, -- end of [14]
+        }, -- end of ["group"]
+    }, -- end of ["vehicle"]
     }             
   
 

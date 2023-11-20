@@ -944,6 +944,18 @@ do
 
 		end
 
+		for index, datas in ipairs(self.fobTemplates[template]["vehicle"]["group"]) do
+			local spawnGroupUnit = SPAWN:NewFromTemplate(datas, datas.name)
+			local x = datas.units[1].x
+			local z = datas.units[1].y 
+			local y = pos.y 
+
+			coord = COORDINATE:New(x, y,z):Translate(distanceBetween,angleBetween )
+
+			spawnGroupUnit:InitCountry(country.id.RUSSIA):InitCategory(Group.Category.GROUND):SpawnFromCoordinate(coord)
+
+		end
+
 	end
 
 

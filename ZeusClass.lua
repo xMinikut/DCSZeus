@@ -267,14 +267,14 @@ do
 			self:Spawn("SA11_ZEUS", pos)		
 		elseif(groupName == "SA5") then 	
 			self:Spawn("SA5_ZEUS", pos)		
-		elseif(groupName == "FOB1") then
-			self:SpawnStaticUnit("FOB", pos)
-		elseif(groupName == "LARGEFOB") then 
-			self:SpawnStaticUnit("LARGEFOB", pos)
-		elseif(groupName == "SMALLFOB") then 
-			self:SpawnStaticUnit("SMALLFOB", pos)
-		elseif(groupName == "MEDIUMFOB") then 
-			self:SpawnByTemplateName("BIGFOB",pos) 
+		-- elseif(groupName == "FOB1") then
+		-- 	self:SpawnStaticUnit("FOB", pos)
+		-- elseif(groupName == "LARGEFOB") then 
+		-- 	self:SpawnStaticUnit("LARGEFOB", pos)
+		-- elseif(groupName == "SMALLFOB") then 
+		-- 	self:SpawnStaticUnit("SMALLFOB", pos)
+		-- elseif(groupName == "MEDIUMFOB") then 
+		-- 	self:SpawnByTemplateName("BIGFOB",pos) 
 		else
 			local nbr = tonumber(cmds[4]) or 1
 			self.randomPos = nbr > 1
